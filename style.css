@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
+:root{
+    --accent :#04AA6D; 
+}
+html, body{
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    color: #fafafa;
+    scroll-behavior: smooth;
+}
+
+a{
+    color: #fafafa;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+a:hover{
+    color: var(--accent);
+}
+nav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 75px;
+    align-items: center;
+    object-fit: cover;
+}
+nav > div.bg{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+nav > div> ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+nav > div > ul > li{
+    margin-right: 25px;
+}
+section#hero{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.bg{
+    position: absolute;
+    z-index: -9999;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bg img{
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(20%) brightness(50%);
+}
+section#hero > .foreground{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    flex-wrap: wrap;
+    padding: 100px;
+    padding-top: 250px;
+    padding-left: 25%;
+}
+section#hero > .foreground > div > h1{
+    font-size: 5rem;
+    line-height: 0;
+}
+section#hero > .foreground > div > p{
+    margin: 0;
+}
+section#hero > .foreground > div > button{
+    padding: 5px 10px;
+    border: 1px solid var(--accent);
+    background-color: transparent   ;
+    color: #fafafa;
+    font-size: 1.2rem;
+    margin: 25px 0;
+    margin-left: 10px;
+    border-radius:3px;
+    cursor: pointer;
+    transition: all .3s ease-in-out ;
+}
+section#hero > .foreground > div > button.primary{
+    background-color: var(--accent);
+
+}
+button.primary a:hover{
+    color: #ffffff;
+}button.secondary a:hover{
+    color: var(--accent);
+}
+section#hero > .foreground > div > button.primary:hover{
+    background-color: #04945f;
+}
+
+section#hero > .foreground > div > button.secondary{
+    color: var(--accent) !important;
+}
+
+main > section#about{
+    padding: 100px;
+    background-color: #0d5674;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    flex-wrap: wrap;
+}
+main > section#about > div > h1{
+    margin-top: 0;
+}
+main > section#contact{
+    background-color: #0d0d0d;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    flex-wrap: wrap;
+}
+
+main > section#contact > div > div{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    
+    flex-wrap: wrap;
+}
+main > section#contact > div > div > div{
+margin: 10px;
+}
+.iconBg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3%;
+    width: 40px;
+    height: 40px;
+    background-color: #fafafa;
+}
+
+main > section#footer{
+    background-color: #0d0d0d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.subSection{
+    margin: 25px 100px;
+}
+.subSection p{
+    margin: 5px;
+    color: #ffffff;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.icons img{
+    width: 120px;
+    height: auto;
+    margin: 10px 25px;
+}
+section#footer{
+    display: flex; justify-content:center; flex-direction: column; align-items: center;
+}
+section#footer > div.links{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start ;               
+}
+.left, .right, .mid{
+    flex: 1;
+}
+
+
+.profileContainer{
+    width: 20%;
+    height:auto;
+}
+.profileContainer img{
+    width: 100%;
+}
